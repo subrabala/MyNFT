@@ -1,12 +1,10 @@
-import './App.css';
+import "./App.css";
+import FirstPage from "./components/FirstPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        
-      </header>
+    <div className="container p-0 m-0">
+      <FirstPage />
     </div>
   );
 }
