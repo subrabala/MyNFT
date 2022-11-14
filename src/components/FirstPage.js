@@ -17,7 +17,7 @@ const FirstPage = () => {
     <div className="firstpage">
       <nav className="navbar navbar-expand-lg  m-0 d-flex justify-content-center">
         <a className="navbar-brand" href="#">
-          <img src="/assets/logo.png" className="logo-brand" alt="logo" />
+          <img src="assets/logo.png" className="logo-brand" alt="logo" />
         </a>
         <button
           className="navbar-toggler"
