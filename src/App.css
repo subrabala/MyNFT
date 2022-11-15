@@ -115,7 +115,7 @@ body {
     color: white;
   }
   
-  #marker {
+  .marker {
     position: absolute;
     /* height: .1px; */
     width: 100%;

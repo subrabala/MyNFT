@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 
 const FirstPage = () => {
   const [file, setFile] = useState();
+  let marker = useRef()
   const fileRef = useRef();
 
   const handleFile = (e) => {
@@ -12,6 +13,11 @@ const FirstPage = () => {
       setFile();
     }
   };
+
+  const handleMarker = (e) => {
+    marker.current.style.left = `${e.target.offsetLeft}px`
+    marker.current.style.width = `${e.target.offsetWidth}px`
+  }
 
   return (
     <div className="firstpage">
@@ -33,23 +39,23 @@ const FirstPage = () => {
 
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav">
-            <div id="marker"></div>
-            <li className="nav-item">
+            <div className="marker" ref={marker}></div>
+            <li className="nav-item" onClick={handleMarker}>
               <a className="nav-link" href="#">
                 Home
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={handleMarker}>
               <a className="nav-link" href="#">
                 Gallery
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={handleMarker}>
               <a className="nav-link" href="#">
                 Profile
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={handleMarker}>
               <a className="nav-link" href="#">
                 Top
               </a>
