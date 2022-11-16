@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Star-wars/static/css/main.64dff13c.css",
-    "main.js": "/Star-wars/static/js/main.75e20d7d.js",
-    "static/js/787.161ebaff.chunk.js": "/Star-wars/static/js/787.161ebaff.chunk.js",
-    "index.html": "/Star-wars/index.html",
-    "main.64dff13c.css.map": "/Star-wars/static/css/main.64dff13c.css.map",
-    "main.75e20d7d.js.map": "/Star-wars/static/js/main.75e20d7d.js.map",
-    "787.161ebaff.chunk.js.map": "/Star-wars/static/js/787.161ebaff.chunk.js.map"
+    "main.css": "/MyNFT/static/css/main.4389800b.css",
+    "main.js": "/MyNFT/static/js/main.c52719ba.js",
+    "static/js/787.63788443.chunk.js": "/MyNFT/static/js/787.63788443.chunk.js",
+    "index.html": "/MyNFT/index.html",
+    "main.4389800b.css.map": "/MyNFT/static/css/main.4389800b.css.map",
+    "main.c52719ba.js.map": "/MyNFT/static/js/main.c52719ba.js.map",
+    "787.63788443.chunk.js.map": "/MyNFT/static/js/787.63788443.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64dff13c.css",
-    "static/js/main.75e20d7d.js"
+    "static/css/main.4389800b.css",
+    "static/js/main.c52719ba.js"
   ]
 }
