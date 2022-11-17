@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-
-
+import Globe from "../assets/globe clear.png"
+import Block from "../assets/blocks clear.png"
 const Home=()=>{
     const [file, setFile] = useState();
   
@@ -31,7 +31,7 @@ const Home=()=>{
                     <div className="col-12 d-flex justify-content-center align-items-center">
                         <div className="pictureFrame">
                             <img
-                                src="assets/Rectangle 2.png"
+                                src="./assets/Rectangle 2.png"
                                 className="photoFrame"
                                 alt="frame"
                             />                                          
@@ -49,14 +49,14 @@ const Home=()=>{
           <>
             <div className="globe">
               <img
-                src="assets/globe clear.png"
+                src={Globe}
                 className="globeimg hidden"
                 alt="globe"
               />
             </div>
             <div className="blocks">
               <img
-                src="assets/blocks clear.png"
+                src={Block}
                 className="blocksimg hidden"
                 alt="blocks"
               />

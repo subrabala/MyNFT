@@ -3,6 +3,8 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Gallery from "./Gallery";
 import About from "./About";
 import Home from "./Home";
+import Logo from "../assets/logo.png";
+
 
 const FirstPage = () => {
   let marker = useRef()
@@ -18,7 +20,7 @@ const FirstPage = () => {
     <div className="firstpage">
       <nav className="navbar navbar-expand-lg  m-0 d-flex justify-content-center">
         <Link className="navbar-brand" to="/">
-          <img src="assets/logo.png" className="logo-brand" alt="logo" />
+          <img src={Logo} className="logo-brand" alt="logo" />
         </Link>
         <button
           className="navbar-toggler"
