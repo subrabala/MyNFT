@@ -67,7 +67,7 @@ const Home=()=>{
           <div className="panel">
             <div className="button_outer">
               <Link className="btn_upload" onClick={() => {
-                file=true
+                
               }}>
                  Generate NFT
               </Link> 

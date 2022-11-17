@@ -14,7 +14,7 @@ const FirstPage = () => {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MyNFT">
     <div className="firstpage">
       <nav className="navbar navbar-expand-lg  m-0 d-flex justify-content-center">
         <Link className="navbar-brand" to="/">
