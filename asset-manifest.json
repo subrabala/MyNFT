@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MyNFT/static/css/main.4389800b.css",
-    "main.js": "/MyNFT/static/js/main.ce2c4298.js",
+    "main.css": "/MyNFT/static/css/main.df5c260e.css",
+    "main.js": "/MyNFT/static/js/main.605e5dff.js",
     "static/js/787.c0a8ae75.chunk.js": "/MyNFT/static/js/787.c0a8ae75.chunk.js",
     "index.html": "/MyNFT/index.html",
-    "main.4389800b.css.map": "/MyNFT/static/css/main.4389800b.css.map",
-    "main.ce2c4298.js.map": "/MyNFT/static/js/main.ce2c4298.js.map",
+    "main.df5c260e.css.map": "/MyNFT/static/css/main.df5c260e.css.map",
+    "main.605e5dff.js.map": "/MyNFT/static/js/main.605e5dff.js.map",
     "787.c0a8ae75.chunk.js.map": "/MyNFT/static/js/787.c0a8ae75.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4389800b.css",
-    "static/js/main.ce2c4298.js"
+    "static/css/main.df5c260e.css",
+    "static/js/main.605e5dff.js"
   ]
 }
