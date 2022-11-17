@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
 body {
     padding: 0;
     margin: 0;
@@ -48,16 +50,47 @@ body {
     flex-direction: column;
   }
   
-  .dropboximg {
+  /* .dropboximg {
     width: 500px;
     height: auto;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -52%);
+  } */
+
+  .contentmain{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5.6rem;
+  }
+  .maintext{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    width: 60%;
+    padding: 20px;
+    height: auto;
+    
+    color: white;
   }
   
+  .maintext span{
+    text-align: center;
+    width: 60%;
+   
+    padding: 20px;
+    height: auto;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    color: #7F84C8;
+  }
   .globeimg {
+    
     position: absolute;
     left: -450px;
     rotate: 90deg;
@@ -162,9 +195,14 @@ body {
   } */
   .btn_upload{
     cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s linear;
   }
-  .button_outer:hover{
+  .btn_upload:hover{
     cursor: pointer;
+    color: white;
+    font-size: large;
   }
   .button_outer input {
     position: absolute;

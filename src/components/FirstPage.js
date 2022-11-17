@@ -1,18 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { useRef} from "react";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Gallery from "./Gallery";
+import About from "./About";
+import Home from "./Home";
 
 const FirstPage = () => {
-  const [file, setFile] = useState();
   let marker = useRef()
-  const fileRef = useRef();
-
-  const handleFile = (e) => {
-    const filesUploaded = e.target.files;
-    if (filesUploaded?.length) {
-      setFile(filesUploaded[0]);
-    } else {
-      setFile();
-    }
-  };
+  
 
   const handleMarker = (e) => {
     marker.current.style.left = `${e.target.offsetLeft}px`
@@ -20,11 +14,12 @@ const FirstPage = () => {
   }
 
   return (
+    <BrowserRouter>
     <div className="firstpage">
       <nav className="navbar navbar-expand-lg  m-0 d-flex justify-content-center">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img src="assets/logo.png" className="logo-brand" alt="logo" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -41,100 +36,39 @@ const FirstPage = () => {
           <ul className="navbar-nav">
             <div className="marker" ref={marker}></div>
             <li className="nav-item" onClick={handleMarker}>
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item" onClick={handleMarker}>
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/gallery">
                 Gallery
-              </a>
+              </Link>
             </li>
             <li className="nav-item" onClick={handleMarker}>
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/about">
                 Profile
-              </a>
+              </Link>
             </li>
             <li className="nav-item" onClick={handleMarker}>
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/">
                 Top
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </nav>
-      <div className="bodyof">
-        <div className="dropbox">
-          {!file && (
-            <img
-              src="assets/drag_box.png"
-              className="dropboximg hidden"
-              alt="dragbox"
-            />
-          )}
-          {file && (
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 d-flex justify-content-center align-items-center">
-                        <div className="pictureFrame">
-                            <img
-                                src="assets/Rectangle 2.png"
-                                className="photoFrame"
-                                alt="frame"
-                            />
-                            <img className="uploadedPhoto" src={URL.createObjectURL(file)} alt="display" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-          )}
-        </div>
-        {!file && (
-          <>
-            <div className="globe">
-              <img
-                src="assets/globe clear.png"
-                className="globeimg hidden"
-                alt="globe"
-              />
-            </div>
-            <div className="blocks">
-              <img
-                src="assets/blocks clear.png"
-                className="blocksimg hidden"
-                alt="blocks"
-              />
-            </div>
-          </>
-        )}
-        <div className="container">
-          <div className="panel">
-            <div className="button_outer">
-              <input
-                ref={fileRef}
-                type="file"
-                id="upload_file"
-                name=""
-                onChange={handleFile}
-              />
-              {file ? <div
-                className="btn_upload"
-                onClick={() => {}}
-              >
-                 Generate NFT
-              </div> :
-              <div
-                className="btn_upload"
-                onClick={() => fileRef.click()}
-              >
-                 Upload
-              </div>
-                }
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      
+      <Routes >
+        <Route  path="/" element={<Home/>}/>
+
+        <Route  path="/gallery" element={<Gallery/>}/>
+        <Route  path="/about" element={<About/>}/>
+      </Routes>
+      
     </div>
+    </BrowserRouter>
   );
 };
 
