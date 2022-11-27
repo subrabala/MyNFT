@@ -4,52 +4,30 @@ import CardComp from "./CardComp";
 const data = [
   {
     id: 1,
-    title: "monkey",
-    desc: "a bitcoin with bla bla",
-    subtitle: "leedong wwook",
+    title: "001284829 ETH",
+    desc: "Rakoon",
   },
   {
     id: 2,
-    title: "rakooon",
-    desc: "an ether with bla bla",
-    subtitle: "doraemon nobitahahahhaaaa",
+    title: "0284924849 ETH",
+    desc: "Chimtu",
   },
   {
     id: 3,
-    title: "bandar",
-    desc: "a phooti kaudi with bla bla",
-    subtitle: "tereku kyu",
+    title: "0284924849 ETH",
+    desc: "Shocoa",
   },
   {
     id: 4,
-    title: "banddsfdar",
-    desc: "a phoosdvti kaudi with bla bla",
-    subtitle: "tereku kyu",
+    title: "0284924849 ETH",
+    desc: "Ramboo",
   },
   {
     id: 11,
-    title: "monkey",
-    desc: "a bitcoin with bla bla",
-    subtitle: "leedong wwook",
-  },
-  {
-    id: 22,
-    title: "rakooon",
-    desc: "an ether with bla bla",
-    subtitle: "doraemon nobitahahahhaaaa",
-  },
-  {
-    id: 43,
-    title: "bandar",
-    desc: "a phooti kaudi with bla bla",
-    subtitle: "tereku kyu",
-  },
-  {
-    id: 44,
-    title: "banddsfdar",
-    desc: "a phoosdvti kaudi with bla bla",
-    subtitle: "tereku kyu",
-  },
+    title: "0284924849 ETH",
+    desc: "Kriyum",
+
+  }
 ];
 
 const Gallery = () => {

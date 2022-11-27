@@ -265,4 +265,38 @@ body {
     transition: 2s linear;
   }
 
+  .card{
+    background: linear-gradient(108.98deg, #917FFB 27.06%, #3F2DAF 90.91%);
+opacity:1;
+backdrop-filter: blur(6.52837px);
+border-radius: 11px;
+width: 250px;
+height: 350px;
+  }
+
+.card-title{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 25px;
+
+background: linear-gradient(180deg, #FFFFFF 14%, rgba(255, 255, 255, 0) 92%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+.card{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
   
+  color: #FFFFFF;
+}

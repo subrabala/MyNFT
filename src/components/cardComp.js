@@ -5,14 +5,13 @@ import Card from 'react-bootstrap/Card';
 const CardComp=({coin})=> {
   return (
     <div className='col-3 p-2'>
-        <Card style={{ width: 'auto' }}>
+        <Card >
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
         <Card.Title>{coin.title}</Card.Title>
         <Card.Text>
           {coin.desc}
         </Card.Text>
-        <Button variant="primary">{coin.subtitle}</Button>
       </Card.Body>
     </Card>
     </div>
