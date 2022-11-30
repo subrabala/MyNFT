@@ -3,12 +3,13 @@
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+   overflow: hidden;
     box-sizing: border-box;
   }
   
   .firstpage {
     background-color: #1e1d2f;
+    
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -48,6 +49,7 @@ body {
   
   .bodyof {
     flex-direction: column;
+    overflow: hidden;
   }
   
   /* .dropboximg {
@@ -92,20 +94,28 @@ body {
   .globeimg {
     
     position: absolute;
-    left: -450px;
+    left: -36%;
+    /* 450px */
     rotate: 90deg;
-    top: -5px;
+    top: -1%;                  
+    /* 5px */
     overflow: hidden;
-    width: 800px;
+    width: 65%;
+    /* 800px */
     height: auto;
     opacity: 0.6;
     transition: 0.7s ease-in-out;
+    
   }
-  
+  .globe{
+    overflow: hidden;
+  }
   .globeimg:hover {
     position: absolute;
-    left: -500px;
-    top: 100px;
+    left: -40%;
+    /* 500px */
+    top: 16%;
+    /* 100px */
     transform-origin: top;
     transform: rotate(-90deg);
     overflow: hidden;
@@ -273,7 +283,10 @@ border-radius: 11px;
 width: 250px;
 height: 350px;
   }
-
+.card-image{
+  width: 100px;
+  height: auto;
+}
 .card-title{
   font-family: 'Inter';
 font-style: normal;
@@ -299,4 +312,22 @@ background-clip: text;
   line-height: 25px;
   
   color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  height: 100vh;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8984d3; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #38346d; 
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #140f58; 
 }
